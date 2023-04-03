@@ -1,0 +1,109 @@
+/* header */
+.grid-container {
+  display: grid;
+  width: 100%;
+  background-color: rgb(207, 202, 202);
+  grid-template-columns: 25% 50% 25%;
+  justify-content: space-betwen;
+}
+
+.item1 {
+  font-size: 3em;
+  color: black;
+}
+
+.item2 {
+  text-align: center;
+}
+
+.item3 {
+  text-align: end;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: block;
+    width: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .item1 {
+    grid-column: 1/span 2;
+  }
+  .item2 {
+    grid-column: 1/span;
+  }
+  .item3 {
+    text-align: start;
+  }
+}
+.item1 {
+  font-size: 6vh;
+  color: black;
+}
+
+.item3 {
+  align-self: start;
+}
+
+@keyframes efecto-img {
+  0% {
+    width: 20%;
+  }
+  20% {
+    width: 40%;
+  }
+  40% {
+    width: 70%;
+  }
+  60% {
+    width: 80%;
+  }
+  80% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.item2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://static.dw.com/image/62791039_6.jpg");
+  animation-name: efecto-img;
+  animation-iteration-count: 10s;
+  animation-timing-function: erase-in;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+body {
+  Width: 100%;
+  background-color: rgb(182, 173, 173);
+  text-align: 100%;
+  min-height: 40vh;
+}
+
+/* parrafo */
+.paragraph {
+  Width: 50%;
+  background-color: rgba(250, 230, 177, 0.356);
+  text-align: center;
+  margin: 10vh auto 0 auto;
+  font-size: 2.5vh;
+  font-family: Roboto Mono;
+}
+
+/* footer */
+.container {
+  Width: 100%;
+  background-color: rgb(168, 168, 168);
+  text-align: center;
+  font-family: "Arial Narrow bold", sans-serif;
+  font-size: 1.5vh;
+  font-weight: 600;
+  margin-top: 10vh;
+  color: rgb(110, 37, 37);
+}/*# sourceMappingURL=style.css.map */
