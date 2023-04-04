@@ -41,16 +41,15 @@
 }
 
 @mixin styles($size, $bckcolor, $text) {
-    Width: $size;
+    width: $size;
     background-color: $bckcolor;
     text-align: $text;
 }
 
 body {
-    @include styles(100%, rgb(182, 173, 173), 100%);
+    @include styles(100%, rgb(182, 173, 173), );
     min-height: 40vh;
 }
-
 
 /* parrafo */
 
@@ -80,3 +79,4 @@ body {
     margin-top: 10vh;
     color: rgb(110, 37, 37);
 }
+
